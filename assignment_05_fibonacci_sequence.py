@@ -47,5 +47,17 @@
 #
 # =============================================================================
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
-# =============================================================================
+=============================================================================
+def print_fibonacci_sequence():
+    """Part A: Print the first N terms of the Fibonacci sequence."""
+    pass
+
+def check_fibonacci_number():
+    """Part B: Check if a number belongs to the Fibonacci sequence."""
+    pass
+
+if __name__ == "__main__":
+    print_fibonacci_sequence()
+    check_fibonacci_number()
+
 
