@@ -43,5 +43,40 @@
 #
 # =============================================================================
 # YOUR CODE BELOW — remove the # symbols from the scaffold and fill it in
-# =============================================================================
+=============================================================================
+def get_grade(score):
+	"""Return letter grade for score (0-100). Return None if score out of range."""
+	try:
+		# Ensure score is an integer (or can be compared as number)
+		s = int(score)
+	except Exception:
+		return None
+
+	if s < 0 or s > 100:
+		return None
+
+	if 80 <= s <= 100:
+		return 'A'
+	elif 70 <= s <= 79:
+		return 'B'
+	elif 60 <= s <= 69:
+		return 'C'
+	elif 50 <= s <= 59:
+		return 'D'
+	else:
+		return 'F'
+
+
+def main():
+	user = input('Enter student score (0-100): ')
+	grade = get_grade(user)
+	if grade is None:
+		print('Error: Score must be between 0 and 100.')
+	else:
+		print(f'Grade: {grade}')
+
+
+if __name__ == '__main__':
+	main()
+
 
